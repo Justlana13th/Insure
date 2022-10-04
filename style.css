@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.line {
+    border: 1px hsl(273, 4%, 51%) solid;
+    width: 130px;
+}
+
+.bg-img {
+    position:absolute;
+    top: 400px;
+}
+
+.bg-img2 img {
+    width: 320px;
+}
+
+.bg-img2{
+    position:absolute;
+    top: 71px;
+    right: 0;
+    z-index: 2;
+}
+
+/* Start of Navbar */
+.navbar {
+    font-family: 'DM Serif Display', serif;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container nav ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    right: -240px;
+}
+
+.navbar a {
+    color:  hsl(273, 4%, 51%);
+    text-decoration: none;
+    margin: 0 10px;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.navbar .container nav ul li a:hover {
+    color: hsl(270, 9%, 17%);
+}
+
+.navbar .btn {
+    border: 2px hsl(273, 4%, 51%) solid;
+    padding: 3px 15px;
+    font-weight: 400;
+}
+
+.navbar .btn:hover {
+    background-color: hsl(270, 9%, 17%);
+    border: 2px hsl(270, 9%, 17%) solid;
+}
+/* End of Navbar */
+
+/* Start of Hero */
+.hero {
+    background-color: hsl(256, 26%, 20%);
+    padding: 10px;
+    height: 520px;
+    position: relative;
+}
+
+.hero .grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 98%);
+}
+
+.hero-text p {
+    color: hsl(273, 4%, 51%);
+    margin-bottom: 30px;
+}
+
+.hero-text .btn-hero {
+    border: 2px hsl(273, 4%, 51%) solid;
+    padding: 5px 15px;
+    font-weight: 400;
+    color: hsl(0, 0%, 98%);
+    text-decoration: none;
+}
+
+.hero-text .btn-hero:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+    border: 2px hsl(0, 0%, 98%) solid;
+}
+
+.hero .container img {
+    height: 470px;
+    width: 470px;
+    justify-self: end;
+    position: relative;
+    top: 110px;
+}
+
+/* End of Hero */
+
+/* Start of Features */
+.features {
+    font-family: 'Karla', sans-serif;
+    padding-top: 200px;
+}
+
+.features .line {
+    margin-bottom: 50px;
+}
+
+.features h1 {
+    color: hsl(256, 26%, 20%);
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.features .grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.features .grid .card {
+    padding: 10px;
+}
+
+.features .grid .card h3 {
+    margin: 15px 0;
+}
+/* End of Features */
+
+/* Start of Info */
+.info {
+    font-family: 'Karla', sans-serif;
+    padding: 150px 0;
+
+}
+
+.info .grid{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.info .bg-dark {
+    background-color: hsl(256, 26%, 20%);
+    padding: 80px;
+    background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: right 0;
+}
+
+.info h1{
+    color: hsl(0, 0%, 98%);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.info .btn {
+    justify-self: end;
+}
+
+.info a {
+    border: 2px hsl(273, 4%, 51%) solid;
+    padding: 5px 15px;
+    font-weight: 400;
+    color: hsl(0, 0%, 98%);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.info a:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+    border: 2px hsl(0, 0%, 98%) solid;
+}
+/* End of Info */
+
+/* Start of Footer */
+.footer {
+    padding: 20px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.footer .flex {
+    display: flex;
+}
+
+.footer .top-footer { 
+    justify-content: space-between;
+    border-bottom: 1px hsl(216, 30%, 68%) solid;
+    padding-bottom: 30px;
+}
+
+.footer .top-footer .social img {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer .container .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer .container .bottom-footer {
+    padding: 30px 0;
+}
+
+.footer .bottom-footer h5 {
+    color: hsl(273, 4%, 51%);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.bottom-footer nav ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.bottom-footer nav ul li a {
+    text-decoration: none;
+    color: hsl(256, 26%, 20%);
+    text-transform: uppercase;
+    
+}
+/* End of Footer */
